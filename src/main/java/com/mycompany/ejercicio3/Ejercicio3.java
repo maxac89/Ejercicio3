@@ -16,11 +16,13 @@ public class Ejercicio3 {
         Scanner sc = new Scanner(System.in);
                 
         System.out.println("Ingrese en km la distancia recorrida");
-        int kmsNum = sc.nextInt();
+        float kms = sc.nextFloat();
 
         System.out.println("Ahora ingrese las horas que ha tardado en recorrerla");
-        int hoursNum = sc.nextInt();
+        float hours = sc.nextFloat();
         
-        System.out.println("La velocidad media empleada ha sido " + kmsNum / hoursNum + "km/h.");
+        float speed = kms / hours;
+        
+        System.out.println("La velocidad media empleada ha sido " + speed + "km/h.");
     }
 }
